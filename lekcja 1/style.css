@@ -1,0 +1,137 @@
+:root {
+  --light_red: hsl(0, 100%, 67%);
+  --orange_yellow: hsl(39, 100%, 56%);
+  --greem_teal: hsl(166, 100%, 37%);
+  --cobalt_blue: hsl(234, 85%, 45%);
+  --light_stale_blue: hsl(252, 100%, 67%);
+  --light_royal_blue: hsl(241, 81%, 54%);
+  --circle_violet_blue: hsla(256, 72%, 46%, 1);
+  --cirlce_persian_blue: hsla(241, 72%, 46%, 0);
+}
+@media screen and (min-width: 1440px) {
+  body {
+    width: 1400px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1439px) {
+  body {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 375px) {
+  body {
+    width: 375px;
+  }
+}
+@font-face {
+  font-family: hanken;
+  src: url("fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+body {
+  display: flex;
+
+  align-items: center;
+  height: 100vh;
+  flex-wrap: wrap;
+  font-family: "hanken", Arial, Helvetica, sans-serif;
+}
+#left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(var(--light_stale_blue), var(--light_royal_blue));
+  padding: 10px 25px 20px 25px;
+
+  border-radius: 20px;
+}
+#circle-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(
+    var(--circle_violet_blue),
+    var(--cirlce_persian_blue)
+  );
+  border-radius: 50%;
+  margin: 40px;
+}
+#circle-content :first-child {
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0;
+}
+#circle-content :last-child {
+  color: grey;
+  font-size: 20px;
+}
+#left-content h3 {
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0;
+}
+#left-paragraph {
+  font-size: 18px;
+  font-weight: 300;
+  color: white;
+  flex-wrap: wrap;
+  width: 230px;
+}
+#right-content {
+  margin-left: 30px;
+  line-height: 4;
+}
+#right-content h2 {
+  margin: 0;
+  font-size: 22px;
+}
+#reaction {
+  color: var(--light_red);
+  width: 120px;
+}
+#memory {
+  color: var(--orange_yellow);
+  width: 120px;
+}
+#verbal {
+  color: var(--greem_teal);
+  width: 120px;
+}
+#visual {
+  color: var(--cobalt_blue);
+  width: 120px;
+}
+#parametr img {
+  margin-right: 15px;
+}
+.line {
+  display: flex;
+}
+#button {
+  color: white;
+  background: hsl(224, 30%, 27%);
+  padding: 12px 90px;
+  border-radius: 40px;
+}
+#button:hover {
+  background: linear-gradient(
+    var(--light_stale_blue),
+    var(--light_royal_blue) 30%
+  );
+}
+
+#points {
+  float: right;
+  margin-right: 6px;
+  font-weight: 800;
+}
+#hundred {
+  color: grey;
+}
